@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,152 +6,38 @@
     <title>FORTEX | Constructora en Guatemala</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (CDN gratuito) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Inicializa EmailJS con TU PUBLIC KEY
+            emailjs.init('PhNlZpMRznHsX8uxS');   // ⚠️ Esta es tu Public Key (NO compartas la Private Key)
+        })();
+    </script>
+    <style>
+        /* ===== TODO EL CSS QUE YA TENÍAS ===== */
+        /* Copia aquí todo el contenido de styles.css que te di antes */
+        /* Por brevedad no lo repito, pero debes ponerlo */
+        :root {
+            --primary: #0A2472;
+            --accent: #F39C12;
+            /* ... resto del CSS ... */
+        }
+        /* ... (pega aquí todo el código CSS de la respuesta anterior) ... */
+    </style>
 </head>
 <body>
-    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <!-- HEADER (igual que antes) -->
     <header class="header">
-        <div class="container nav-container">
-            <div class="logo">
-                <h1>FORTEX</h1>
-                <span class="tagline">Constructora</span>
-            </div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="nav" id="nav">
-                <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- ... -->
     </header>
 
     <main>
-        <!-- SECCIÓN HERO / INICIO -->
-        <section id="inicio" class="hero">
-            <div class="container hero-content">
-                <h2 class="hero-title">Construyendo el futuro de Guatemala</h2>
-                <p class="hero-text">
-                    Especialistas en <strong>edificios</strong>, <strong>proyectos residenciales</strong> y <strong>ETF</strong> (Estacionamientos, Torres y Fraccionamientos).  
-                    Más de 20 años de experiencia y excelencia en cada obra.
-                </p>
-                <a href="#contacto" class="btn btn-primary">Solicita información</a>
-            </div>
-        </section>
-
-        <!-- SECCIÓN SERVICIOS -->
-        <section id="servicios" class="services">
-            <div class="container">
-                <h2 class="section-title">Nuestros Servicios</h2>
-                <div class="services-grid">
-                    <!-- Servicio 1: Edificios -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h3>Edificios</h3>
-                        <p>Diseño y construcción de torres corporativas, oficinas y complejos comerciales con estándares internacionales.</p>
-                    </div>
-                    <!-- Servicio 2: Proyectos residenciales -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <h3>Proyectos Residenciales</h3>
-                        <p>Casas, condominios y fraccionamientos que combinan confort, seguridad y plusvalía.</p>
-                    </div>
-                    <!-- Servicio 3: ETF -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-parking"></i>
-                        </div>
-                        <h3>ETF</h3>
-                        <p><strong>Estacionamientos, Torres y Fraccionamientos.</strong> Soluciones integrales para movilidad, vivienda vertical y horizontal.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN PROYECTOS DESTACADOS -->
-        <section id="proyectos" class="projects">
-            <div class="container">
-                <h2 class="section-title">Proyectos Destacados</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <div class="project-img">
-                            <i class="fas fa-city"></i>
-                        </div>
-                        <div class="project-info">
-                            <h3>Torre FORTEX</h3>
-                            <p>Edificio corporativo de 18 niveles, Ciudad de Guatemala.</p>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <i class="fas fa-tree"></i>
-                        </div>
-                        <div class="project-info">
-                            <h3>Residencial Los Altos</h3>
-                            <p>80 viviendas unifamiliares con áreas verdes, Quetzaltenango.</p>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <i class="fas fa-parking"></i>
-                        </div>
-                        <div class="project-info">
-                            <h3>Estacionamiento Central</h3>
-                            <p>Parqueo subterráneo para 500 vehículos, Zona 10.</p>
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-img">
-                            <i class="fas fa-umbrella-beach"></i>
-                        </div>
-                        <div class="project-info">
-                            <h3>Fraccionamiento San José</h3>
-                            <p>120 lotes con servicios integrados, Antigua Guatemala.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN NOSOTROS -->
-        <section id="nosotros" class="about">
-            <div class="container about-content">
-                <div class="about-text">
-                    <h2 class="section-title">Sobre FORTEX</h2>
-                    <p>Somos una empresa guatemalteca con más de dos décadas de trayectoria, reconocida por la calidad, innovación y cumplimiento en cada proyecto. Nuestro equipo multidisciplinario trabaja con la más alta tecnología y bajo estrictos estándares de sostenibilidad.</p>
-                    <p><strong>Misión:</strong> Transformar espacios en entornos funcionales y estéticos que mejoren la calidad de vida de las personas y contribuyan al desarrollo del país.</p>
-                    <p><strong>Visión:</strong> Ser la constructora líder en Guatemala, referente en América Central por nuestra excelencia y responsabilidad social.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">+20</span>
-                        <span class="stat-label">años de experiencia</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">+150</span>
-                        <span class="stat-label">proyectos entregados</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">clientes satisfechos</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN CONTACTO -->
+        <!-- SECCIONES: HERO, SERVICIOS, PROYECTOS, NOSOTROS (igual) -->
+        
+        <!-- SECCIÓN CONTACTO (con formulario modificado) -->
         <section id="contacto" class="contact">
             <div class="container">
                 <h2 class="section-title">Contáctanos</h2>
@@ -171,13 +57,13 @@
                     <div class="contact-form">
                         <form id="contactForm">
                             <div class="form-group">
-                                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" placeholder="Correo electrónico" required>
+                                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
                             </div>
                             <div class="form-group">
-                                <textarea id="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+                                <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar mensaje</button>
                             <div id="formMessage" class="form-message"></div>
@@ -188,14 +74,105 @@
         </section>
     </main>
 
-    <!-- PIE DE PÁGINA -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 FORTEX Constructora. Todos los derechos reservados. Guatemala, C.A.</p>
         </div>
     </footer>
 
-    <!-- JS personalizado -->
-    <script src="script.js"></script>
+    <script>
+        // ===== MENÚ HAMBURGUESA =====
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        }
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // ===== RESALTAR ENLACE ACTIVO =====
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').includes(current)) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // ===== FORMULARIO DE CONTACTO CON EMAILJS =====
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        // ⚠️ REEMPLAZA 'template_xxxxxx' CON EL ID REAL DE TU PLANTILLA
+        const TEMPLATE_ID = 'template_261yt2d';  // <--- CÁMBIALO
+        const SERVICE_ID = 'service_3sgqzmk';   // Tu Service ID
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+
+            // Validación
+            if (!nombre || !email || !mensaje) {
+                formMessage.textContent = 'Por favor, completa todos los campos.';
+                formMessage.className = 'form-message error';
+                return;
+            }
+            if (!validateEmail(email)) {
+                formMessage.textContent = 'Correo electrónico no válido.';
+                formMessage.className = 'form-message error';
+                return;
+            }
+
+            // Parámetros que se enviarán a la plantilla
+            const templateParams = {
+                from_name: nombre,
+                from_email: email,
+                message: mensaje,
+                to_email: 'wilfredoguillensalazar@gmail.com'  // Tu correo destino
+            };
+
+            // Mostrar mensaje de "enviando..."
+            formMessage.textContent = 'Enviando mensaje...';
+            formMessage.className = 'form-message';
+            formMessage.style.display = 'block';
+
+            // Enviar usando EmailJS
+            emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
+                .then(function(response) {
+                    formMessage.textContent = '¡Mensaje enviado con éxito! Te contactaremos pronto.';
+                    formMessage.className = 'form-message success';
+                    contactForm.reset();
+                }, function(error) {
+                    formMessage.textContent = 'Hubo un error al enviar. Intenta de nuevo.';
+                    formMessage.className = 'form-message error';
+                    console.error('Error EmailJS:', error);
+                });
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
 </body>
 </html>
